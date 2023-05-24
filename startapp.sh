@@ -3,4 +3,4 @@
 set -ex
 
 export HOME=/config
-exec session-desktop --no-sandbox
+exec signal-desktop --no-sandbox
