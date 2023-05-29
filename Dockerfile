@@ -14,6 +14,9 @@ RUN : \
         gpg \
         libgbm1 \
         procps \
+        libatk-adaptor \ 
+        libcups2 \
+        libgtk-3-dev \
     && wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg \
     && cat signal-desktop-keyring.gpg \
         | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null \
